@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.css" rel="stylesheet" type='text/css'>
+    <title>CRUZ'S VERDULERIA</title>
+    
+</head>
+<body style='padding:20px; padding-top:25px'>
+    <nav class="navbar navbar-light bg-light">
+        <h1 class="navbar-brand">CRUZ'S VERDULERIA</h1>
+        <button onclick="location.href='plus/index.html'" >ACERCA DE NOSOTROS</button>
+      </nav>
+      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        Link with href
+      </a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span >Carrito</span>
+          <span id="count" class="badge badge-secondary badge-pill">0</span>
+        </h4>
+      </button>
+      
+      <div class="offcanvas offcanvas-start" tabindex="" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <h4>Tu carrito:</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Proveedor</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Accion</th>
+                        <th id= "toutal" scope="col">TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody id="tablabody">
+                    <!-- aqui tabla carrito -->
+                </tbody>
+            </table>
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+<p>
+   
+    <b>LOS PRECIOS SON INDIVIDUALES </b> <br>
+    
+</p>
+<div id="productosgenerados" class="card-group"><div class="card">
+   
+	<h5 class="card-title">TOMATE</h5>
+    <p class="card-text">venezolano</p>
+    <p class="card-text"><b> $ 20</b></p>
+    <img class="card-img-top" src="https://agroactivocol.com/wp-content/uploads/2020/07/Tomate-Corona-1.jpg" alt="Card image cap" width="250px" height="250px">    
+	<button id="2"> AGREGAR A LA COMPRA</button><div class="card-footer text-muted"> </div></div><div class="card">
+    
+	<h5 class="card-title">LECHUGA</h5>
+    <p class="card-text">boliviano</p>
+    <p class="card-text"><b> $ 30</b></p>
+    <img class="card-img-top" src="https://media.istockphoto.com/photos/lettuce-isolated-isolated-on-white-background-picture-id181072765?k=20&amp;m=181072765&amp;s=612x612&amp;w=0&amp;h=8gpOrTTz71R9QgfP64ALOCNFW8Pat5arsVzDQamOu5k=" alt="Card image cap" width="250px" height="250px">    
+	<button id="3"> AGREGAR A LA COMPRA</button><div class="card-footer text-muted"> </div></div><div class="card">
+    </div>
+	<h5 class="card-title">ZANAHORIA</h5>
+    <p class="card-text">brasilero</p>
+    <p class="card-text"><b> $ 30</b></p>
+    <img class="card-img-top" src="https://soycomocomo.es/media/2019/03/zanahorias.jpg" alt="Card image cap" width="250px" height="250px">    
+	<button id="4"> AGREGAR A LA COMPRA</button><div class="card-footer text-muted"> </div></div><div class="card">
+    
+	<h5 class="card-title">PEPINO</h5>
+    <p class="card-text">colombiano</p>
+    <p class="card-text"><b> $ 50</b></p>
+    <img class="card-img-top" src="https://st2.depositphotos.com/1494134/7007/v/600/depositphotos_70075971-stock-illustration-cucumber-and-slice-isolated-on.jpg" alt="Card image cap" width="250px" height="250px">    
+	<button id="5"> AGREGAR A LA COMPRA</button><div class="card-footer text-muted"> </div></div><div class="card">
+    
+	<h5 class="card-title">CALABAZA</h5>
+    <p class="card-text">colombiano</p>
+    <p class="card-text"><b> $ 20</b></p>
+    <img class="card-img-top" src="https://static.libertyprim.com/files/familles/potiron-large.jpg?1569317112" alt="Card image cap" width="250px" height="250px">
+	<button id="6"> AGREGAR A LA COMPRA</button><div class="card-footer text-muted"> </div></div><div class="card">
+    
+	<h5 class="card-title">HUEVO</h5>
+    <p class="card-text">colombiano</p>
+    <p class="card-text"><b> $ 120</b></p>
+    <img class="card-img-top" src="https://mejorconsalud.as.com/wp-content/uploads/2018/09/huevos-gallina-768x512.jpg" alt="Card image cap" width="250px" height="250px">
+    <button id="7"> AGREGAR A LA COMPRA</button><div class="card-footer text-muted"> </div></div>
+	</div>
+   
+<div>
+   <!--<h4>Tu carrito:</h4>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Proveedor</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Accion</th>
+                <th id= "toutal" scope="col">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody id="tablabody">
+            <!-- aqui tabla carrito -->
+       <!--  </tbody>-->
+   <!--  </table>-->
+</div>
+<div><p>USTED DESEA CREAR UNA CUENTA?</p></div>
+<button class="btn btn-primary" id="botonAccount"> CREA UNA CUENTA RAPIDAMENTE!</button>
+<div id= "formularioCuenta">
+    
+</div>
+
+  </div>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="carrito.js"></script>
+</body>
+
+</html>
